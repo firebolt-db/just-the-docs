@@ -47,8 +47,8 @@
         top: 0.2em;
         left: -1.6em;
 //      color: $grey-dk-000;
-        font-weight: bold;
-        content: counter(step-counter);
+        font-weight: 500;
+        content: counter(step-counter) ".";
         counter-increment: step-counter;
         @include fs-3;
 
@@ -62,7 +62,7 @@
 
         li {
           &::before {
-            content: counter(sub-counter, lower-alpha);
+            content: counter(sub-counter, lower-alpha) ".";
             counter-increment: sub-counter;
           }
         }

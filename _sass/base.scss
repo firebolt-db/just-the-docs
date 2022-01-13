@@ -40,11 +40,35 @@ noscript .table-wrapper {
   margin-top: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
+h1 {
+  font-family: $header-font-family;
+  color: $black;
+}
+
+h2 {
+  margin-top: 2em;
+  font-family: $header-font-family;
+  color: $black;
+}
+
+h3 {
+  margin-top: 2em;
+  font-family: $header-font-family;
+  color: $black;
+}
+
+h4 {
+  margin-top: 2em;
+  font-family: $header-font-family;
+  color: $black;
+}
+
+h5 {
+  margin-top: 2em;
+  font-family: $header-font-family;
+  color: $black;
+}
+
 h6 {
   margin-top: 0;
   margin-bottom: 1em;

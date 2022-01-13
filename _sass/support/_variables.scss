@@ -4,8 +4,9 @@
 
 $body-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
   Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$header-font-family: "Poppins", sans-serif !default;
 $mono-font-family: "SFMono-Regular", Menlo, Consolas, Monospace !default;
-$root-font-size: 16px !default; // Base font-size for rems
+$root-font-size: 14px !default; // Base font-size for rems ... jg changed from 16px to 13px
 $body-line-height: 1.4 !default;
 $content-line-height: 1.6 !default;
 $body-heading-line-height: 1.25 !default;
@@ -17,14 +18,14 @@ $body-heading-line-height: 1.25 !default;
 
 $font-size-1: 9px !default;
 $font-size-1-sm: 10px !default;
-$font-size-2: 11px !default; //h4 - uppercased!, h6 not uppercased, text-small
-$font-size-3: 12px !default; //h5
-$font-size-4: 14px !default;
-$font-size-5: 16px !default; //h3
-$font-size-6: 18px !default; //h2
-$font-size-7: 24px !default;
-$font-size-8: 32px !default; //h1
-$font-size-9: 36px !default;
+$font-size-2: 11px !default; //f - uppercased!, h6 not uppercased, text-small
+$font-size-3: 12px !default; //removed as h5
+$font-size-4: 14px !default; //was not used, changed to h6
+$font-size-5: 16px !default; //was h3, changed to h5
+$font-size-6: 18px !default; //was h2, changed to h4
+$font-size-7: 21px !default; //changed to h3 changed value from 24 to 21
+$font-size-8: 24px !default; //was h1, jg changed to h2 and changed value from 32 to 24
+$font-size-9: 32px !default; //jg changed to h1
 $font-size-10: 42px !default;
 $font-size-10-sm: 48px !default;
 
@@ -33,6 +34,7 @@ $font-size-10-sm: 48px !default;
 //
 
 $white: #fff !default;
+$black: #000 !default; //jg added for headings
 
 $grey-dk-000: #959396 !default;
 $grey-dk-100: #5c5962 !default;
@@ -78,7 +80,7 @@ $code-background-color: $grey-lt-000 !default;
 $feedback-color: darken($sidebar-color, 3%) !default;
 
 $body-text-color: $grey-dk-100 !default;
-$body-heading-color: $grey-dk-300 !default;
+$body-heading-color: $black !default;
 $search-result-preview-color: $grey-dk-000 !default;
 $nav-child-link-color: $grey-dk-100 !default;
 $link-color: $purple-000 !default;

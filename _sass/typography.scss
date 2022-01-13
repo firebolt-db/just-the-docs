@@ -5,25 +5,24 @@
 
 h1,
 .text-alpha {
-  @include fs-8;
-  font-weight: 600;
+  @include fs-9; //was fs-8 in original see _variables.scss for other changes, those sizes map to mixins in _typography.scss
+  // font-weight: 600;
 }
 
 h2,
 .text-beta {
-  @include fs-6;
+  @include fs-8; //was fs-6 in original
 }
 
 h3,
 .text-gamma {
-  @include fs-5;
+  @include fs-7;
 }
 
 h4,
 .text-delta {
-  @include fs-3;
-  font-weight: 500;
-  text-transform: uppercase;
+  @include fs-6;
+  // font-weight: 500;
 }
 
 h4 code {
@@ -32,14 +31,16 @@ h4 code {
 
 h5,
 .text-epsilon {
-  @include fs-3;
-  color: $grey-dk-200;
+  @include fs-5;
+  font-weight: bold;
+  // color: $grey-dk-200;
 }
 
 h6,
 .text-zeta {
-  @include fs-2;
-  color: $grey-dk-200;
+  @include fs-4;
+  font-weight: bold;
+  // color: $grey-dk-200;
 }
 
 .text-small {

@@ -17,16 +17,16 @@ $body-heading-line-height: 1.25 !default;
 
 $font-size-1: 9px !default;
 $font-size-1-sm: 10px !default;
-$font-size-2: 11px !default; //f - uppercased!, h6 not uppercased, text-small
-$font-size-3: 12px !default; //removed as h5
-$font-size-4: 14px !default; //was not used, changed to h6
-$font-size-5: 16px !default; //was h3, changed to h5
-$font-size-6: 18px !default; //was h2, changed to h4
-$font-size-7: 21px !default; //changed to h3 changed value from 24 to 21
-$font-size-8: 24px !default; //was h1, jg changed to h2 and changed value from 32 to 24
-$font-size-9: 32px !default; //jg changed to h1
-$font-size-10: 42px !default;
-$font-size-10-sm: 48px !default;
+$font-size-2: 11px !default;
+$font-size-3: 12px !default;
+$font-size-4: 14px !default; //h6, html base, body, etc.
+$font-size-5: 16px !default; //h6 with mq(sm), h5
+$font-size-6: 18px !default; //h5 with mq(sm), h4
+$font-size-7: 21px !default; //h4 with mq(sm), h3
+$font-size-8: 24px !default; //h3 with mq(sm), h2
+$font-size-9: 28px !default; // h2 with mq(sm), h1
+$font-size-10: 32px !default; // h1 with mq(sm)
+$font-size-10-sm: 37px !default;
 
 //
 // Colors

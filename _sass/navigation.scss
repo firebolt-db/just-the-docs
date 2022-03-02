@@ -173,6 +173,7 @@
 .aux-nav {
   height: 60%;
   overflow-x: auto;
+  align-items: center;
   @include fs-2;
 
   .aux-nav-list {
@@ -183,6 +184,7 @@
     list-style: none;
     background-color: $red-000;
     border-radius: 88px;
+    align-items: center;
   }
 
   .aux-nav-list-item {
@@ -190,6 +192,7 @@
     height: 100%;
     padding: 0;
     margin: 0;
+    align-items: center;
   }
 
   @include mq(md) {

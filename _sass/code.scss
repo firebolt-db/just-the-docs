@@ -338,3 +338,32 @@ figure.highlight {
     border-top-right-radius: 0;
   }
 }
+
+pre.highlight {
+  padding: 8px 12px;
+  position: relative;
+
+  // copy code to clipboard
+  .copy {
+    color: $black;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    opacity: 0;
+    font-family: Inter;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background: blank;
+      opacity: 1;
+    }
+  }
+
+  &:active .copy,
+  &:focus .copy,
+  &:hover .copy {
+    background: blank;
+    opacity: 1;
+  }
+}

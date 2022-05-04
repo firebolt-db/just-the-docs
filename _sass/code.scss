@@ -340,12 +340,13 @@ figure.highlight {
 }
 
 pre.highlight {
-  padding: 8px 12px;
   position: relative;
 
   // copy code to clipboard
   .copy {
-    color: $black;
+    border: none;
+    outline: none;
+    background-color: $code-background-color;
     position: absolute;
     right: 1rem;
     top: 1rem;

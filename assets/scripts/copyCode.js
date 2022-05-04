@@ -5,7 +5,7 @@ codeBlocks.forEach(function (codeBlock) {
   copyButton.className = 'copy';
   copyButton.type = 'button';
   copyButton.ariaLabel = 'Copy code to clipboard';
-  copyButton.innerText = 'COPY';
+  copyButton.innerHTML = '<img src="../../assets/images/copy_icon.svg" />';
 
   codeBlock.append(copyButton);
 
@@ -13,11 +13,11 @@ codeBlocks.forEach(function (codeBlock) {
     var code = codeBlock.querySelector('code').innerText.trim();
     window.navigator.clipboard.writeText(code);
 
-    copyButton.innerText = 'COPIED';
-    var fourSeconds = 4000;
+    copyButton.innerHTML = '<img src="../../assets/images/success.svg" />';
+    var twoSeconds = 2000;
 
     setTimeout(function () {
-      copyButton.innerText = 'COPY';
-    }, fourSeconds);
+      copyButton.innerHTML = '<img src="../../assets/images/copy_icon.svg" />';
+    }, twoSeconds);
   });
 });

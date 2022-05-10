@@ -346,6 +346,7 @@ pre.highlight {
   .copy {
     border: none;
     outline: none;
+    overflow: hidden;
     background-color: $code-background-color;
     position: absolute;
     right: 1rem;

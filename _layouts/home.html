@@ -5,6 +5,7 @@ layout: default
 
 <div class="home-page">
             {{ content }}
+
 </div>
 
   <!-- home page features -->
@@ -17,6 +18,7 @@ layout: default
         <div class="col-sm-4">
             <a href="{{ f_row.url | relative_url }}">
           <div class="card">
+
             {% if f_row.img_path %}
               {% capture img_path %}
               {{ '/assets/images/' | relative_url | append: f_row.img_path }}

@@ -11,14 +11,13 @@ layout: default
   <!-- home page features -->
   <section class="home-page-features">
     <div class="container">
-      {% if page.feature_rows %}
-      <div class="row">
+      <!-- {% if page.feature_rows %} -->
+      <!-- <div class="row"> -->
         {% for f_row in page.feature_rows %}
         <!-- TODO use animate.css to animate on hover -->
-        <div class="col-sm-4">
-            <a href="{{ f_row.url | relative_url }}">
+        <!-- <div class="column"> -->
           <div class="card">
-
+            <a href="{{ f_row.url | relative_url }}"></a>
             {% if f_row.img_path %}
               {% capture img_path %}
               {{ '/assets/images/' | relative_url | append: f_row.img_path }}
@@ -30,8 +29,8 @@ layout: default
               {{ f_row.img_alt | default: 'Feature image' }}
               {% endcapture %}
             {% endif %}
-
-            <div class="shadow-sm rounded-top">
+            
+            <div class="card-body">
               {% if img_path %}
                 <img class="img-fluid" src="{{ img_path | strip }}" alt="{{ img_alt | strip }}">
               {% endif %}
@@ -40,16 +39,16 @@ layout: default
 
             <div class="card-body">
               <a href="{{ f_row.url | relative_url }}">
-                <h6 class="m-sm-0 p-1 bg-primary d-inline-block">
-                  {{ f_row.title | strip | strip_html | strip_newlines | truncate: 50 }}
-                </h6>
-              <p class="card-text">{{ f_row.excerpt | strip | strip_html | strip_newlines | truncate: 150 }}</p>
+                <h3 class="card-title">
+                  {{ f_row.title }}
+                </h3>
+              <div class="card-text">{{ f_row.excerpt }}</div>
+              <br>
             </a>
             </div>
           </div>
-        </div>
         {% endfor %}
-      </div>
+      <!-- </div> -->
       {% endif%}
     </div>
   </section>

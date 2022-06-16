@@ -7,13 +7,15 @@
   "bugs": "https://github.com/pmarsceill/just-the-docs/issues",
   "devDependencies": {
     "@primer/css": "^15.2.0",
+    "glob-parent": ">=5.1.2",
     "minimist": "^1.2.6",
     "prettier": "^2.1.2",
     "stylelint": "^13.7.2",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-primer": "^11.1.1",
     "stylelint-prettier": "^1.1.2",
-    "stylelint-selector-no-utility": "^4.0.0"
+    "stylelint-selector-no-utility": "^4.0.0",
+    "trim-newlines": ">=3.0.1"
   },
   "scripts": {
     "test": "stylelint '**/*.scss'",

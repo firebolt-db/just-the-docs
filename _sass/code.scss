@@ -341,6 +341,7 @@ figure.highlight {
 
 pre.highlight {
   position: relative;
+  white-space: pre-wrap;
 
   // copy code to clipboard
   .copy {
